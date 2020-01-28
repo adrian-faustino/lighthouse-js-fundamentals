@@ -203,12 +203,168 @@ var numbers = [
 ];
 
 // your code goes here
-for (let row = 0; row < numbers.length; row++) {
-  for (let column = 0; column < numbers[row].length; column++) {
-    if(numbers[row][column] % 2 === 0) {
-      numbers[row][column] = "even";
-    } else numbers[row][column] = "odd";
-  } 
-}
+// for (let row = 0; row < numbers.length; row++) {
+//   for (let column = 0; column < numbers[row].length; column++) {
+//     if(numbers[row][column] % 2 === 0) {
+//       numbers[row][column] = "even";
+//     } else numbers[row][column] = "odd";
+//   } 
+// }
 
-console.log(numbers);
+// console.log(numbers);
+
+// function range(start, end, step) {
+//   let newArr = [];
+  
+//   if (start === undefined || end === undefined || step === undefined || start > end || step <= 0) {
+//     return newArr;
+//   }
+
+//   let times = (end - start) / step;
+//   let counter = 0;
+//   while (counter <= times) {
+//     newArr[counter] = start;
+//     counter++;
+//     start += step;
+//   }
+//   return newArr;
+// }
+
+// console.log(range(-5, 2, 3));
+
+// function lastIndexOf(arr, val) {
+//   let lastIndex = -1;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === val) {
+//       lastIndex = i;
+//     }
+//   }
+//   return lastIndex;
+// }
+
+// console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
+// console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
+// console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
+// console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
+// console.log(lastIndexOf([], 3), "=?", -1);
+
+// LOOPY LIGHTHOUSE 2 assignment
+// function loopyLighthouse(range, multiples, words) {
+//   if (range[0] > range[1]) {
+//     return;
+//   }
+//   for (let i = range[0]; i <= range[1]; i++) {
+//     if (i % multiples[0] === 0 && i % multiples[1] === 0) {
+//       console.log(words[0] + words[1]);
+//     }  if (i % multiples[0] === 0) {
+//       console.log(words[0]);
+//     } else if (i % multiples[1] === 0) {
+//       console.log(words[1]);
+//     } else console.log(i);
+//   }
+// }
+
+// loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);
+
+// function concat(a,b) {
+//   let newArr = [];
+
+//   for (let i = 0; i < a.length; i++) {
+//     newArr.push(a[i]);
+//   }
+
+//   for (let i = 0; i < b.length; i++) {
+//     newArr.push(b[i]);
+//   }
+
+//   return newArr;
+// }
+
+
+// console.log(concat([1,2,3],[]));
+
+
+// function concat(a,b) {
+//   let newArr = [];
+
+//   for (let i = 0; i < a.length; i++) {
+//     newArr.push(a[i]);
+//   }
+
+//   for (let i = 0; i < b.length; i++) {
+//     newArr.push(b[i]);
+//   }
+
+//   return newArr;
+// }
+// function merge(a,b) {
+//   let newArr = concat(a,b);
+//   return newArr.sort()
+// }
+
+// console.log(merge([1,5,2],[7,3,9]));
+
+// OBJECTS - UDACITY
+
+// let breakfast = {
+//   name: "The Lumberjack",
+//   price: 9.95,
+//   ingredients: ['eggs','sausage','toast','hashbrowns','pancakes']
+// };
+
+// var savingsAccount = {
+//   balance: 1000,
+//   interestRatePercent: 1,
+//   deposit: function addMoney(amount) {
+//     if (amount > 0) {
+//       savingsAccount.balance += amount;
+//     }
+//   },
+//   withdraw: function removeMoney(amount) {
+//     var verifyBalance = savingsAccount.balance - amount;
+//     if (amount > 0 && verifyBalance >= 0) {
+//       savingsAccount.balance -= amount;
+//     }
+//   },
+//   printAccountSummary: function() {
+//     return "Welcome!\nYour balance is currently $" + savingsAccount.balance + " and your interest rate is " + savingsAccount.interestRatePercent + "%.";
+//   }
+// };
+
+// console.log(savingsAccount.printAccountSummary());
+
+// let facebookProfile = {
+//   name: "Adrian",
+//   friends: 200,
+//   messages: ["Hello", "World"],
+//   postMessage: function(message) {
+//     return this.messages.push(message); //do I need return here?
+//   },
+//   deleteMessage: function(index) {
+//     return this.messages.splice(index, 1);
+//   },
+//   addFriend: function() {
+//     return this.friends += 1;
+//   },
+//   removeFriend: function() {
+//     return this.friends -= 1;
+//   }
+// };
+
+// console.log(facebookProfile.friends);
+
+/*
+ * Programming Quiz: Donuts Revisited (7-6)
+ */
+
+// var donuts = [
+//   { type: "Jelly", cost: 1.22 },
+//   { type: "Chocolate", cost: 2.45 },
+//   { type: "Cider", cost: 1.59 },
+//   { type: "Boston Cream", cost: 5.99 }
+// ];
+
+// // your code goes here
+// donuts.forEach(function(value, num){
+//   console.log(donuts[num]["type"] + " donuts cost $" + donuts[num]["cost"] + " each");
+// });
